@@ -22,3 +22,7 @@ await page.locator('form[action="/login"] input[type="password"]').fill('wrongpa
 await page.getByRole('button', {name: 'Login'}).click()
 await expect(page.getByText('Your email or password is incorrect!')).toBeVisible()
 })
+
+
+
+
